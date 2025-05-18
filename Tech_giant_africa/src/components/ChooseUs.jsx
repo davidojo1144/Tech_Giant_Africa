@@ -33,7 +33,7 @@ const ChooseUs = () => {
   return (
     <div className='py-20'>
       <div className='container'>
-        <div className='text-center md:text-4xl text-2xl mb-10'>
+        <div className='text-center md:text-4xl text-2xl md:mb-10 mb-5'>
           <Title 
             text1={"Why Choose"} 
             text2={"Techgiant Africa?"} 
@@ -55,11 +55,10 @@ const ChooseUs = () => {
             </div>
           ))}
           
-          {/* Additional visual element */}
           <div className="lg:col-span-3 flex justify-center mt-12">
-            <div className="bg-teal-500/10 border border-teal-500/30 rounded-xl p-6 text-center max-w-2xl">
+            <div className="bg-gray-500/10 border backdrop-blur-sm border-gray-500/30 rounded-xl p-6 text-center max-w-2xl">
               <h3 className="text-2xl font-bold text-white mb-3">Our Commitment</h3>
-              <p className="text-gray-300">
+              <p className="text-gray-200">
                 At Techgiant Africa, we combine technical excellence with deep local knowledge 
                 to deliver solutions that truly work for your business in the African context.
               </p>
