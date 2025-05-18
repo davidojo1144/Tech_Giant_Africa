@@ -6,11 +6,11 @@ import { TechGiantContext } from '../context/TechGiantContext'
 const ServicesOffered = () => {
 
 
-    const {scrollToServices} = useContext(TechGiantContext)
+    const {servicesRef} = useContext(TechGiantContext)
 
   return (
-    <div ref={scrollToServices} className='container pt-20 pb-20'>
-      <div className='text-center md:text-4xl text-3xl md:mb-7 mb-4'>
+    <div className='container pt-20 pb-20'>
+      <div ref={servicesRef}  className='text-center md:text-4xl text-3xl md:mb-7 mb-4'>
         <Title text1={"Services"} text2={"Offered"}/>
       </div>
       
