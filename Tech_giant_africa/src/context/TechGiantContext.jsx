@@ -1,4 +1,4 @@
-import { createContext } from "react"
+import { createContext, useRef } from "react"
 
 
 export const TechGiantContext = createContext()
@@ -7,9 +7,17 @@ const TechGiantContextProvider = (props)=> {
 
 
 
+    const howItWorksRef = useRef(null)
+
+    const scrollToHowItWorks = ()=> {
+        howItWorksRef.current?.scrollIntoView({ behavior: 'smooth' })
+    }
+
+
 
     const value = {
-
+        howItWorksRef,
+        scrollToHowItWorks
     }
 
 
