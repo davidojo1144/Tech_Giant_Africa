@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { assets } from '../assets/assets'
 import ResponsiveDisplay from './ResponsiveDisplay'
 
+
 const ResponsiveNavbar = () => {
 
     const [img, setImg] = useState(false)
