@@ -1,38 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Title from './Title'
+import { services } from '../assets/assets'
+import { TechGiantContext } from '../context/TechGiantContext'
 
 const ServicesOffered = () => {
-  const services = [
-    {
-      title: "Website Development",
-      description: "Custom, responsive websites designed to elevate your online presence.",
-      icon: "🌐"
-    },
-    {
-      title: "Mobile App Development",
-      description: "Native and cross-platform apps built to engage your users.",
-      icon: "📱"
-    },
-    {
-      title: "E-commerce Solutions",
-      description: "Secure online stores to grow your sales.",
-      icon: "🛒"
-    },
-    {
-      title: "UI/UX Design",
-      description: "User-friendly interfaces that delight your visitors.",
-      icon: "🎨"
-    },
-    {
-      title: "Maintenance & Support",
-      description: "Ongoing support to keep your digital assets running smoothly.",
-      icon: "🔧"
-    }
-  ]
+
+
+    const {scrollToServices} = useContext(TechGiantContext)
 
   return (
-    <div className='container pt-20 pb-20'>
-      <div className='text-center md:text-4xl text-3xl mb-16'>
+    <div ref={scrollToServices} className='container pt-20 pb-20'>
+      <div className='text-center md:text-4xl text-3xl md:mb-7 mb-4'>
         <Title text1={"Services"} text2={"Offered"}/>
       </div>
       
