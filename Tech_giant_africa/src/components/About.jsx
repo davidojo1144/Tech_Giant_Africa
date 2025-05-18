@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Title from './Title'
 import { assets } from '../assets/assets'
+import { TechGiantContext } from '../context/TechGiantContext'
+
 
 const About = () => {
+
+    const {aboutUsRef} = useContext(TechGiantContext)
+
+
   return (
     <>
-      <div className='container pt-20 pb-20'>
-        <div className='text-center md:text-4xl text-3xl'>
+      <div ref={aboutUsRef} className='container pt-20 pb-20'>
+        <div  className='text-center md:text-4xl text-3xl'>
             <Title text1={"About"} text2={"Us"}/>
         </div>
         <div className='flex md:flex-row flex-col md:gap-5 gap-10 pt-5'>

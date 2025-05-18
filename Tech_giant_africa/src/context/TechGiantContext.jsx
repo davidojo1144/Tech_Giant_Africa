@@ -7,24 +7,24 @@ const TechGiantContextProvider = (props)=> {
 
 
 
-    const howItWorksRef = useRef(null)
+    const aboutUsRef = useRef(null)
 
-    const scrollToHowItWorks = ()=> {
-        howItWorksRef.current?.scrollIntoView({ behavior: 'smooth' })
+    const scrollToAboutUs = ()=> {
+        aboutUsRef.current?.scrollIntoView({ behavior: 'smooth' })
     }
 
 
 
     const value = {
-        howItWorksRef,
-        scrollToHowItWorks
+        aboutUsRef,
+        scrollToAboutUs
     }
 
 
     return (
-        <TechGiantContext  value={value}>
+        <TechGiantContext.Provider  value={value}>
             {props.children}
-        </TechGiantContext>
+        </TechGiantContext.Provider>
     )
 }
 
