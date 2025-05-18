@@ -11,8 +11,8 @@ const ResponsiveNavbar = () => {
   return (
     <div className='container'>
       <div className='flex items-center justify-between md:hidden pt-5'>
-        <img className='w-10' onClick={()=> setImg(!img)} src={img ? assets.cancel : assets.menu} alt="" />
-        <img className='w-20' src={assets.logo} alt="" />
+        <img className='w-8' onClick={()=> setImg(!img)} src={img ? assets.cancel : assets.menu} alt="" />
+        <img className='w-16' src={assets.logo} alt="" />
       </div>
       <ResponsiveDisplay img={img}/>
     </div>

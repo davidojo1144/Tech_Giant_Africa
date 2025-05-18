@@ -14,7 +14,7 @@ const ResponsiveDisplay = ({img}) => {
             exit={{ opacity:0, y: -100 }}
             transition={{duration: 0.3}}
             >
-                <div className='bg-gray-200  text-gray-600 hover:text-gray-700 cursor-pointer text-md font-semibold uppercase  mt-5 rounded-2xl md:hidden'>
+                <div className='bg-gray-200  text-gray-600 hover:text-gray-700 cursor-pointer text-md font-semibold uppercase  mt-5 rounded md:hidden'>
                     <ul className='flex flex-col items-start p-9 justify-center  gap-7'>
                         <div className='flex flex-col gap-10'>
                            <p>About Us</p>
