@@ -31,9 +31,9 @@ const ChooseUs = () => {
   ]
 
   return (
-    <div className='bg-gray-900 py-20'>
+    <div className='py-20'>
       <div className='container'>
-        <div className='text-center mb-16'>
+        <div className='text-center md:text-4xl text-2xl mb-10'>
           <Title 
             text1={"Why Choose"} 
             text2={"Techgiant Africa?"} 
@@ -45,7 +45,7 @@ const ChooseUs = () => {
           {reasons.map((reason, index) => (
             <div 
               key={index}
-              className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-8 border border-gray-700 hover:border-teal-400 transition-all duration-300 hover:scale-[1.02] shadow-lg"
+              className="bg-gradient-to-br from-gray-400 to-gray-500 rounded-xl p-8 border border-gray-700 hover:border-gray-700 transition-all duration-300 hover:scale-[1.02] shadow-lg"
             >
               <div className="flex items-center mb-4">
                 <span className="text-3xl mr-4">{reason.icon}</span>
