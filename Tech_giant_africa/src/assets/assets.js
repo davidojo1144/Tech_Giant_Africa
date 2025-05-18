@@ -48,3 +48,34 @@ export const assets = {
       icon: "🔧"
     }
   ]
+
+
+
+
+  export const reasons = [
+    {
+      title: "Affordable Pricing",
+      description: "Quality solutions that fit your budget.",
+      icon: "💰"
+    },
+    {
+      title: "Experienced Team",
+      description: "Skilled developers with a passion for innovation.",
+      icon: "👨‍💻"
+    },
+    {
+      title: "Fast Delivery",
+      description: "Projects completed within agreed timelines.",
+      icon: "⚡"
+    },
+    {
+      title: "Customer Satisfaction",
+      description: "We prioritize your needs and feedback.",
+      icon: "❤️"
+    },
+    {
+      title: "Local Expertise",
+      description: "Understanding the African market dynamics.",
+      icon: "🌍"
+    }
+  ]
