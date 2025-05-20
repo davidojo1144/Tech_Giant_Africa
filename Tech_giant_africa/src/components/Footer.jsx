@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa'
+import { TechGiantContext } from '../context/TechGiantContext'
 
 const Footer = () => {
+
+    const {scrollToAboutUs, scrollToServices, scrollToContactUs} = useContext(TechGiantContext)
+
+
   return (
-    <div className='bg-gray-200 text-gray-800 py-10 mt-20'>
+    <div className='bg-gray-200 text-gray-800 py-10 mt-44'>
       <div className='container mx-auto '>
         <div className='flex flex-col md:flex-row justify-between gap-8'>
           {/* Company Info */}
@@ -32,10 +37,10 @@ const Footer = () => {
           <div className='w-full md:w-1/3'>
             <h3 className='text-xl font-bold mb-4'>Quick Links</h3>
             <ul className='space-y-2'>
-              <li><p  className='hover:text-gray-500 transition-colors cursor-pointer'>About Us</p></li>
-              <li><p  className='hover:text-gray-500 transition-colors cursor-pointer'>Services</p></li>
+              <li><p onClick={scrollToAboutUs} className='hover:text-gray-500 transition-colors cursor-pointer'>About Us</p></li>
+              <li><p onClick={scrollToServices} className='hover:text-gray-500 transition-colors cursor-pointer'>Services</p></li>
               <li><p  className='hover:text-gray-500 transition-colors cursor-pointer'>Portfolio</p></li>
-              <li><p  className='hover:text-gray-500 transition-colors cursor-pointer'>Contact Us</p></li>
+              <li><p onClick={scrollToContactUs} className='hover:text-gray-500 transition-colors cursor-pointer'>Contact Us</p></li>
             </ul>
           </div>
 
