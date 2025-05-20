@@ -8,10 +8,13 @@ const ContactUs = () => {
         <Title text1={"Get In"}  text2={"Touch"}/>
       </div>
       <div className='flex md:flex-row  flex-col items-center justify-between gap-10'>
-        <div>
-          <h1></h1>
+        <div className='space-y-5 text-white'>
+          <h1>Have a project in mind or questions? We'd love to hear from you!</h1>
           <div>
-
+            <p>Contact Details</p>
+            <p>Phone</p>
+            <p>Email</p>
+            <p>Address</p>
           </div>
         </div>
         <form action="">
