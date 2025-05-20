@@ -3,17 +3,17 @@ import Title from './Title'
 import { TechGiantContext } from '../context/TechGiantContext'
 
 const ContactUs = () => {
-  const { phone, email, address } = useContext(TechGiantContext)
+  const { phone, email, address, contactUsRef } = useContext(TechGiantContext)
 
   return (
-    <div className='container mt-10'>
+    <div ref={contactUsRef} className='container mt-20 mb-20'>
       <div className='text-center md:text-4xl text-3xl'>
         <Title text1={"Get In"} text2={"Touch"} />
       </div>
       <div className='flex md:flex-row flex-col items-center justify-between gap-10 pt-10 pb-10'>
         <div className='space-y-5 text-white'>
           <h1 className='md:text-2xl text-xl font-semibold pb-7'>Have a project in mind or questions? We'd love to hear from you!</h1>
-          <div className='space-y-4'>
+          <div  className='space-y-4'>
             <p className='font-bold text-lg'>Contact Details</p>
             <p>Phone: {phone}</p>
             <p>Email: {email}</p>

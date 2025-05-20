@@ -13,16 +13,16 @@ const Footer = () => {
             
             {/* Social Media Links */}
             <div className='flex space-x-4'>
-              <a href="https://instagram.com/techgiantafrica" target="_blank" rel="noopener noreferrer" className='hover:text-blue-400 transition-colors'>
+              <a href="https://instagram.com/techgiantafrica" target="_blank" rel="noopener noreferrer" className='hover:text-gray-500 transition-colors'>
                 <FaInstagram size={24} />
               </a>
-              <a href="https://facebook.com/techgiantafrica" target="_blank" rel="noopener noreferrer" className='hover:text-blue-400 transition-colors'>
+              <a href="https://facebook.com/techgiantafrica" target="_blank" rel="noopener noreferrer" className='hover:text-gray-500 transition-colors'>
                 <FaFacebook size={24} />
               </a>
-              <a href="https://x.com/techgiantafrica" target="_blank" rel="noopener noreferrer" className='hover:text-blue-400 transition-colors'>
+              <a href="https://x.com/techgiantafrica" target="_blank" rel="noopener noreferrer" className='hover:text-gray-500 transition-colors'>
                 <FaTwitter size={24} />
               </a>
-              <a href="https://linkedin.com/company/techgiant-africa" target="_blank" rel="noopener noreferrer" className='hover:text-blue-400 transition-colors'>
+              <a href="https://linkedin.com/company/techgiant-africa" target="_blank" rel="noopener noreferrer" className='hover:text-gray-500 transition-colors'>
                 <FaLinkedin size={24} />
               </a>
             </div>
@@ -32,10 +32,10 @@ const Footer = () => {
           <div className='w-full md:w-1/3'>
             <h3 className='text-xl font-bold mb-4'>Quick Links</h3>
             <ul className='space-y-2'>
-              <li><a href="/about" className='hover:text-blue-400 transition-colors'>About Us</a></li>
-              <li><a href="/services" className='hover:text-blue-400 transition-colors'>Services</a></li>
-              <li><a href="/portfolio" className='hover:text-blue-400 transition-colors'>Portfolio</a></li>
-              <li><a href="/contact" className='hover:text-blue-400 transition-colors'>Contact Us</a></li>
+              <li><p  className='hover:text-gray-500 transition-colors cursor-pointer'>About Us</p></li>
+              <li><p  className='hover:text-gray-500 transition-colors cursor-pointer'>Services</p></li>
+              <li><p  className='hover:text-gray-500 transition-colors cursor-pointer'>Portfolio</p></li>
+              <li><p  className='hover:text-gray-500 transition-colors cursor-pointer'>Contact Us</p></li>
             </ul>
           </div>
 
@@ -43,8 +43,8 @@ const Footer = () => {
           <div className='w-full md:w-1/3'>
             <h3 className='text-xl font-bold mb-4'>Legal</h3>
             <ul className='space-y-2'>
-              <li><a href="/privacy" className='hover:text-blue-400 transition-colors'>Privacy Policy</a></li>
-              <li><a href="/terms" className='hover:text-blue-400 transition-colors'>Terms of Service</a></li>
+              <li><p className='hover:text-gray-500 transition-colors cursor-pointer'>Privacy Policy</p></li>
+              <li><p className='hover:text-gray-500 transition-colors cursor-pointer'>Terms of Service</p></li>
             </ul>
           </div>
         </div>
