@@ -6,7 +6,7 @@ import { TechGiantContext } from '../context/TechGiantContext'
 
 const ResponsiveDisplay = ({img}) => {
 
-    const {scrollToAboutUs} = useContext(TechGiantContext)
+    const {scrollToAboutUs, scrollToServices} = useContext(TechGiantContext)
 
 
   return <AnimatePresence>
@@ -21,7 +21,7 @@ const ResponsiveDisplay = ({img}) => {
                     <ul className='flex flex-col items-start p-9 justify-center  gap-7'>
                         <div className='flex flex-col gap-10'>
                            <p onClick={scrollToAboutUs}>About Us</p>
-                           <p>Services Offered</p>
+                           <p onClick={scrollToServices}>Services Offered</p>
                            <p>Contact Us</p>
                         </div>
                     </ul>

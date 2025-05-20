@@ -26,6 +26,10 @@ const TechGiantContextProvider = (props)=> {
         contactUsRef.current?.scrollIntoView({ behavior: 'smooth' })
     }
 
+    const phone = "07014223337"
+    const email = "techgiantafrica@gmail.com"
+    const address = "3 Ajibola Str, Ogundana, Opposite DHL, Allen Avenue, Ikeja Lagos"
+
 
 
     const value = {
@@ -34,7 +38,10 @@ const TechGiantContextProvider = (props)=> {
         servicesRef,
         scrollToServices,
         contactUsRef,
-        scrollToContactUs
+        scrollToContactUs,
+        phone,
+        email,
+        address
     }
 
 
