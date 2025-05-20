@@ -115,7 +115,7 @@ const Hero = () => {
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded transition-colors"
+                    className="inline-block bg-gray-200 hover:bg-gray-300 text-black py-2 px-4 rounded transition-colors"
                   >
                     View Live Project
                   </a>
