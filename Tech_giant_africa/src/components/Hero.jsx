@@ -43,7 +43,7 @@ const Hero = () => {
     const randomQuote = techQuotes[Math.floor(Math.random() * techQuotes.length)]
     setCurrentQuote(randomQuote)
     setShowQuote(true)
-    setShowPortfolio(false) // Close portfolio if open
+    setShowPortfolio(false) 
     setTimeout(() => {
       setShowQuote(false)
     }, 10000)
@@ -51,7 +51,7 @@ const Hero = () => {
 
   const togglePortfolio = () => {
     setShowPortfolio(!showPortfolio)
-    setShowQuote(false) // Close quote if open
+    setShowQuote(false) 
   }
 
   return (

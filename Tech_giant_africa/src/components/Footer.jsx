@@ -39,7 +39,6 @@ const Footer = () => {
             <ul className='space-y-2'>
               <li><p onClick={scrollToAboutUs} className='hover:text-gray-500 transition-colors cursor-pointer'>About Us</p></li>
               <li><p onClick={scrollToServices} className='hover:text-gray-500 transition-colors cursor-pointer'>Services</p></li>
-              <li><p  className='hover:text-gray-500 transition-colors cursor-pointer'>Portfolio</p></li>
               <li><p onClick={scrollToContactUs} className='hover:text-gray-500 transition-colors cursor-pointer'>Contact Us</p></li>
             </ul>
           </div>
