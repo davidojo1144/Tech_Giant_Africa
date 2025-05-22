@@ -20,7 +20,7 @@ const ContactUs = () => {
             <p>Address: {address}</p>
           </div>
         </div>
-        <form className='bg-gray-100 p-5 rounded w-full md:w-1/2'>
+        <form className='bg-gray-100 p-5 rounded w-full md:w-full xl:w-1/2'>
           <div className='space-y-5'>
             <div className='flex flex-col md:flex-row gap-5 w-full'>
               <input 

@@ -58,19 +58,19 @@ const Hero = () => {
     <>
       <div className='container mb-10'>
         <div className='flex md:flex-row flex-col items-center gap-10 mt-10 border-2 border-gray-400 shadow-2xl md:p-10 p-3'>
-          <div className='text-white md:space-y-8 space-y-3'>
-            <h1 className='prata-regular md:text-4xl text-3xl '>Affordable Websites & Apps for Your Business & Personal Needs.</h1>
+          <div className='text-white xl:space-y-8 md:space-y-5 space-y-3'>
+            <h1 className='prata-regular xl:text-4xl md:text-3xl text-3xl '>Affordable Websites & Apps for Your Business & Personal Needs.</h1>
             <p className='md:text-xl text-md'>Building innovative digital solutions at prices that suit your budget.</p>
             <div className='flex gap-3'>
               <button 
                 onClick={handleGetQuote}
-                className='py-2 px-3 bg-gray-200 hover:bg-gray-300 text-gray-700 hover:text-gray-800 rounded md:text-xl text-xs transition-colors'
+                className='py-2 px-3 bg-gray-200 hover:bg-gray-300 text-gray-700 hover:text-gray-800 rounded xl:text-xl md:text-lg text-xs transition-colors'
               >
                 Get a Free Quote
               </button>
               <button 
                 onClick={togglePortfolio}
-                className='py-2 px-3 bg-gray-200 hover:bg-gray-300 text-gray-700 hover:text-gray-800 rounded md:text-xl text-xs transition-colors'
+                className='py-2 px-3 bg-gray-200 hover:bg-gray-300 text-gray-700 hover:text-gray-800 rounded xl:text-xl md:text-lg text-xs transition-colors'
               >
                 View Our Portfolio
               </button>
@@ -81,7 +81,7 @@ const Hero = () => {
               </div>
             )}
           </div>
-          <img className='md:w-[40%] md:h-[100%] rounded' src={assets.hero} alt="Digital Solutions" />
+          <img className='xl:w-[40%] md:w-[50%]  xl:h-[100%]   rounded' src={assets.hero} alt="Digital Solutions" />
         </div>
       </div>
 
