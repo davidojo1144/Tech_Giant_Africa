@@ -2,7 +2,7 @@ import logo from  "./logo.png"
 import cancel from  "./cancel.png"
 import menu from  "./menu.png"
 import hero from  "./hero.jpg"
-//import about from  "./about.jpg"
+import about from  "./about.jpg"
 
 
 
