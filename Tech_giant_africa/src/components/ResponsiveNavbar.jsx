@@ -16,7 +16,7 @@ const ResponsiveNavbar = () => {
                     reverse={menuOpen}
                     onClick={() => setMenuOpen(!menuOpen)}
                     strokeColor="#FFFFFF" 
-                    speed={0.5}
+                    speed={3.0}
                     className="cursor-pointer" 
                 />
                 <img className='w-16' src={assets.logo} alt="Logo" />
