@@ -5,18 +5,23 @@ import App from './App.jsx'
 import TechGiantContextProvider from './context/TechGiantContext.jsx'
 import { BrowserRouter } from 'react-router-dom'
 
-// Eruda debugger (dev mode only)
-if (import.meta.env.DEV) {
+// Initialize Eruda in both dev and production
+const initEruda = () => {
   import('eruda').then(({ default: eruda }) => {
     eruda.init({
       tool: ['console', 'elements', 'network', 'performance'],
       defaults: {
         displaySize: 45,
-        theme: 'Dark' // Better for OLED screens
+        theme: 'Dark'
       }
-    })
-    console.log('Eruda debugger initialized') // Optional confirmation
-  }).catch(console.error)
+    });
+    console.log('Eruda debugger initialized');
+  }).catch(console.error);
+};
+
+// Enable Eruda based on URL hash or localStorage flag
+if (window.location.hash === '#debug' || localStorage.getItem('debug-mode') === 'true') {
+  initEruda();
 }
 
 createRoot(document.getElementById('root')).render(
